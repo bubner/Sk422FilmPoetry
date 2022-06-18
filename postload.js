@@ -3,7 +3,7 @@
 function cornerLoad() {
     window.open(
         'https://docs.google.com/document/d/1gfN-ipnPRoLUttZCLePkoXNLqsGI1PhLiNYJkapna7Y/edit?usp=sharing',
-        '_blank' // <- This is what makes it open in a new window.
+        '_blank'
       );
 }
 
@@ -12,8 +12,9 @@ const windowLoc = window.location.pathname.split('/');
 let lastElement = windowLoc[windowLoc.length - 1];
 // Assign lastElement to the final item
 const pathName = lastElement;
+console.log(pathName);
 
-// If current page is index.html, start the event listeners
+// If current page is index.html, or the base of the GitHub page, start the event listeners
 if (pathName === "index.html" || pathName === "holo911.github.io") {      
     startEventListeners();
 }
