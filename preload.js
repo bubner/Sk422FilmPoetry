@@ -1,10 +1,7 @@
 // JavaScript pre DOM load
 
-const url = new URL(window.location.href);
-url.searchParams.set('reloadTime', Date.now().toString());
-window.location.href = url.toString();
+location.reload(true);
 // Prevents caching problems
-
 
 function fadeIn() {
     if (!window.AnimationEvent) { return; }
