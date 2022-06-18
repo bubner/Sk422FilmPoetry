@@ -1,0 +1,277 @@
+/* CSS Document */
+
+html {
+  --scrollbarBG: #000000;
+  --thumbBG: #b2b2b3;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: auto;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  background-color: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 3px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 25px;
+}
+
+li .linksLG, li .linksSM {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  transform: translate(5%, 0%);
+  text-decoration: none;
+  z-index: 1;
+}
+
+li .linksLG {
+  display: block;
+}
+
+li .linksSM {
+  display: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.headingTextLG, .headingTextSM {
+  text-align: right;
+  float: right;
+  color: white;
+  margin: auto;
+  transform: translate(0%, 50%);
+  padding-top: 2px;
+  padding-right: 1.5%;
+  width: auto;
+}
+
+.headingTextLG {
+  display: block;
+}
+
+.headingTextSM {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .headingTextLG {
+    display: none;
+  }
+
+  .headingTextSM {
+    display: block;
+  }
+
+  li .linksLG {
+    display: none;
+  }
+
+  li .linksSM {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .headingTextSM {
+    display: none;
+  }
+}
+
+.mainBarButtons {
+  text-align: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  transform: translate(0%, 5px);
+}
+
+#internalText {
+  position: relative;
+  font-family: "Merriweather", sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+#titleText {
+  font-size: 48px;
+}
+
+#secondaryText {
+  font-size: 32px;
+}
+
+.coverElement {
+  margin: 0px;
+  border-radius: 40px;
+  transform: translate(0, 63px);
+}
+
+#wonderIcon {
+  float: left;
+  width: 27px;
+  padding: 2px;
+  padding-right: 20px;
+  z-index: 2;
+  transform: translate(35%, 15%);
+  position: relative;
+  height: auto;
+}
+
+.primary, button {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+
+button.annotation {
+  background: none;
+  border: 0;
+}
+
+#index, #p2, #p3 {
+  position: static;
+  transform: translate(0, 70px);
+  background-size: cover;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4vw;
+  border-radius: 40px;
+}
+
+#index {
+  background-image: url(images/indexbg.jpg);
+}
+
+#p2 {
+  background-image: url(images/p2bg.jpg);
+}
+
+#p3 {
+  background-image: url(images/p3bg.jpg);
+}
+
+#blur {
+  background: rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(6px);
+  padding: 6em;
+}
+
+.contentLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(180deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes loader-inner {
+  0% { height: 0%; }
+  25% { height: 0%; }
+  50% { height: 100%; }
+  75% { height: 100%; }
+  100% { height: 0%; }
+}
+
+#fader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: #242f3f;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+  from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+}
+
+#fader.fade-in {
+  opacity: 1;
+  animation-name: fade-in;
+}
