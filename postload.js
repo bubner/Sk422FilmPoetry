@@ -14,20 +14,38 @@ let lastElement = windowLoc[windowLoc.length - 1];
 const pathName = lastElement;
 
 // If current page is index.html, start the event listeners
-if (pathName === "index.html") {      
+if (pathName === "index.html" || pathName === holo911.github.io) {      
     startEventListeners();
 }
 
 function startEventListeners() {
     console.log('EventListeners online');
+    const close = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("annotationModal");
+    const a1t = document.getElementById('a1t');
+    const a2t = document.getElementById('a2t');
 
     const btn1 = document.getElementById('a1');
     btn1.addEventListener('click', function(event){
-        console.log('Button Clicked');
+        modal.classList.toggle('mfade');
+        a1t.style.display = "block";
+        a2t.style.display = "none";
     });
 
     const btn2 = document.getElementById('a2');
-    btn2.addEventListener('click', function(event){
-        console.log('Button Clicked');
+    btn2.addEventListener('click', function(event){ 
+        modal.classList.toggle('mfade');
+        a1t.style.display = "none";
+        a2t.style.display = "block";
     });
+
+    close.onclick = function() {
+        modal.style.display = "none";
+      }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
 }

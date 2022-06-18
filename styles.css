@@ -127,6 +127,12 @@ li a:hover {
 
 #secondaryText {
   font-size: 32px;
+  font-family: "Lato", sans-serif;
+}
+
+#thirdText {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
 }
 
 .coverElement {
@@ -148,13 +154,20 @@ li a:hover {
 
 .primary, button {
   text-align: center;
-  font-size: 32px;
+  font-size: 24px;
   color: white;
 }
 
 button.annotation {
-  background: none;
+  background-color: rgb(124, 124, 124);
   border: 0;
+  padding: 0;
+}
+
+button.annotation:hover {
+  background-color: #ed1c24;
+  cursor: pointer;
+  color: black;
 }
 
 #index, #p2, #p3 {
@@ -274,4 +287,50 @@ button.annotation {
 #fader.fade-in {
   opacity: 1;
   animation-name: fade-in;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.amodcont {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#annotationModal {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#annotationModal.mfade {
+  opacity: 1;
+  display: block;
 }
