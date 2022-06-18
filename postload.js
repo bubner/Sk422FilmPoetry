@@ -14,7 +14,7 @@ let lastElement = windowLoc[windowLoc.length - 1];
 const pathName = lastElement;
 
 // If current page is index.html, start the event listeners
-if (pathName === "index.html" || pathName === holo911.github.io) {      
+if (pathName === "index.html" || pathName === "holo911.github.io") {      
     startEventListeners();
 }
 
