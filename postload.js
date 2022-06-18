@@ -12,7 +12,6 @@ const windowLoc = window.location.pathname.split('/');
 let lastElement = windowLoc[windowLoc.length - 1];
 // Assign lastElement to the final item
 const pathName = lastElement;
-console.log(pathName);
 
 // If current page is index.html, or is nothing, start the event listeners
 if (pathName === "index.html" || pathName === "") {      
@@ -20,7 +19,7 @@ if (pathName === "index.html" || pathName === "") {
 }
 
 function startEventListeners() {
-    console.log('EventListeners online');
+    console.log('Successfully started EventListeners');
     const close = document.getElementsByClassName("close")[0];
     const modal = document.getElementById("annotationModal");
     const a1t = document.getElementById('a1t');
