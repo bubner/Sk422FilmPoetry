@@ -1,18 +1,10 @@
 // JavaScript pre DOM load
 
-window.addEventListener('load', function(e) {
+const url = new URL(window.location.href);
+url.searchParams.set('reloadTime', Date.now().toString());
+window.location.href = url.toString();
+// Prevents caching problems
 
-    window.applicationCache.addEventListener('updateready', function(e) {
-      if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-        window.applicationCache.swapCache();
-        if (confirm('A new version of this site is available. Load it?')) {
-          window.location.reload();
-        }
-      } else {
-      }
-    }, false);
-  
-  }, false);
 
 function fadeIn() {
     if (!window.AnimationEvent) { return; }
