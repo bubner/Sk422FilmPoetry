@@ -299,15 +299,16 @@ button.annotation:hover {
   height: 100%; 
   overflow: auto; 
   background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .amodcont {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%;
+  border-radius: 35px;
 }
 
 .close {
@@ -325,12 +326,26 @@ button.annotation:hover {
 }
 
 #annotationModal {
-  opacity: 0;
+  opacity: 1;
   display: none;
-  transition: opacity 0.3s ease-in-out;
 }
 
-#annotationModal.mfade {
-  opacity: 1;
-  display: block;
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes moveDown {
+  0% { transform: translate(0, -15%); }
+  100% { transform: translate(0 , 0);} 
+}
+
+@keyframes backgroundOpacity {
+  0% { background-color: rgba(0, 0, 0, 0.0); }
+  100% { background-color: rgba(0, 0, 0, 0.6);; } 
 }

@@ -27,25 +27,35 @@ function startEventListeners() {
 
     const btn1 = document.getElementById('a1');
     btn1.addEventListener('click', function(event){
-        modal.classList.toggle('mfade');
+        modal.style.animation = "fadeIn 0.25s, moveDown 0.4s, backgroundOpacity 1.25s";
+        modal.style.display = "block";
         a1t.style.display = "block";
         a2t.style.display = "none";
     });
 
     const btn2 = document.getElementById('a2');
     btn2.addEventListener('click', function(event){ 
-        modal.classList.toggle('mfade');
+        modal.style.animation = "fadeIn 0.25s, moveDown 0.4s, backgroundOpacity 1.25s";
+        modal.style.display = "block";
         a1t.style.display = "none";
         a2t.style.display = "block";
     });
 
     close.onclick = function() {
-        modal.style.display = "none";
+        modal.style.animation = "fadeOut 0.3s";
+        setTimeout(function(){
+            modal.style.display = "none";
+        }, 230);
       }
+
+        // 70ms gap for browser to transition smoothly
 
     window.onclick = function(event) {
         if (event.target == modal) {
-          modal.style.display = "none";
+            modal.style.animation = "fadeOut 0.3s";
+            setTimeout(function(){
+                modal.style.display = "none";
+            }, 230);
         }
       }
 }
