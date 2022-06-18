@@ -1,8 +1,5 @@
 // JavaScript pre DOM load
 
-location.reload(true);
-// Prevents caching problems
-
 function fadeIn() {
     if (!window.AnimationEvent) { return; }
     let fader = document.getElementById('fader');
