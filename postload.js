@@ -14,8 +14,8 @@ let lastElement = windowLoc[windowLoc.length - 1];
 const pathName = lastElement;
 console.log(pathName);
 
-// If current page is index.html, or the base of the GitHub page, start the event listeners
-if (pathName === "index.html" || pathName === "holo911.github.io") {      
+// If current page is index.html, or is nothing, start the event listeners
+if (pathName === "index.html" || pathName === "") {      
     startEventListeners();
 }
 
