@@ -162,10 +162,6 @@ li a:hover {
   text-align: left;
 }
 
-.flexbox {
-  display: flex;
-}
-
 button.annotation {
   background-color: rgb(124, 124, 124);
   border: 0;
@@ -179,7 +175,6 @@ button.annotation:hover {
 }
 
 #index, #p2, #p2-1, #p3 {
-  position: static;
   transform: translate(0, 70px);
   background-size: cover;
   z-index: 5;
@@ -194,6 +189,8 @@ button.annotation:hover {
   background-image: url(images/p2bg.jpg);
   width: 30%;
   margin: 5px;
+  display: inline-block;
+  z-index: inherit;
 }
 
 #p2-1 {
@@ -201,6 +198,9 @@ button.annotation:hover {
   float: right;
   padding: 2vw;
   height: 30%;
+  display: block;
+  z-index: inherit;
+
 }
 
 #p2-1 #blur, #p2-2 #blur {
@@ -210,7 +210,6 @@ button.annotation:hover {
 #index {
   background-image: url(images/indexbg.jpg);
 }
-
 
 #p3 {
   background-image: url(images/p3bg.jpg);
@@ -372,4 +371,15 @@ button.annotation:hover {
 @keyframes backgroundOpacity {
   0% { background-color: rgba(0, 0, 0, 0.0); }
   100% { background-color: rgba(0, 0, 0, 0.6);; } 
+}
+
+@keyframes generate {
+  0% {
+      transform: translate(0px, 150px);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0px, 70px);
+      opacity: 1;
+  }
 }

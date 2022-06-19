@@ -7,12 +7,6 @@ function cornerLoad() {
       );
 }
 
-const windowLoc = window.location.pathname.split('/');
-// Generate array of all pathnames
-let lastElement = windowLoc[windowLoc.length - 1];
-// Assign lastElement to the final item
-const pathName = lastElement;
-
 // If current page is index.html, or is nothing, start the event listeners
 if (pathName === "index.html" || pathName === "") {      
     startEventListeners();
