@@ -158,8 +158,9 @@ li a:hover {
   color: white;
 }
 
-.secondary ul {
+.secondary ul, .secondary li {
   text-align: left;
+  list-style-type: none;
 }
 
 button.annotation {
@@ -187,8 +188,9 @@ button.annotation:hover {
 
 #p2 {
   background-image: url(images/p2bg.jpg);
-  width: 50%;
+  width: 30%;
   margin: 5px;
+  padding: 2vw;
   display: inline-block;
   z-index: inherit;
 }
@@ -202,8 +204,12 @@ button.annotation:hover {
   z-index: inherit;
 }
 
-#p2-1 #blur, #p2-2 #blur {
+#p2-1 #blur {
   padding: 2em;
+}
+
+#p2 #blur {
+  padding: 3em;
 }
 
 #index {
