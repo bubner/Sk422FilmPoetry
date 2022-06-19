@@ -30,7 +30,7 @@ body {
   background-color: #000;
 }
 
-ul {
+.mainBarButtons ul {
   list-style-type: none;
   margin: 3px;
   padding: 0;
@@ -152,10 +152,18 @@ li a:hover {
   height: auto;
 }
 
-.primary, button {
+.primary, .secondary ,button {
   text-align: center;
   font-size: 24px;
   color: white;
+}
+
+.secondary ul {
+  text-align: left;
+}
+
+.flexbox {
+  display: flex;
 }
 
 button.annotation {
@@ -170,7 +178,7 @@ button.annotation:hover {
   color: black;
 }
 
-#index, #p2, #p3 {
+#index, #p2, #p2-1, #p3 {
   position: static;
   transform: translate(0, 70px);
   background-size: cover;
@@ -178,16 +186,31 @@ button.annotation:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 4vw;
+  flex: 1;
   border-radius: 40px;
+}
+
+#p2 {
+  background-image: url(images/p2bg.jpg);
+  width: 30%;
+  margin: 5px;
+}
+
+#p2-1 {
+  background-image: url(images/p2bg.jpg);
+  float: right;
+  padding: 2vw;
+  height: 30%;
+}
+
+#p2-1 #blur, #p2-2 #blur {
+  padding: 2em;
 }
 
 #index {
   background-image: url(images/indexbg.jpg);
 }
 
-#p2 {
-  background-image: url(images/p2bg.jpg);
-}
 
 #p3 {
   background-image: url(images/p3bg.jpg);
@@ -197,6 +220,7 @@ button.annotation:hover {
   background: rgba(0, 0, 0, 0.2); 
   backdrop-filter: blur(6px);
   padding: 6em;
+  border-radius: 65px;
 }
 
 .contentLoader {
