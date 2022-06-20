@@ -39,6 +39,15 @@ body {
 #banner1 {
   height: 200px;
   width: auto;
+  position: relative;
+  left: 107px;
+  top: -207px;
+}
+
+#banner2 {
+  height: 200px;
+  width: auto;
+  position: relative;
 }
 
 .mainBarButtons ul {
