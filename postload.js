@@ -7,6 +7,38 @@ function cornerLoad() {
       );
 }
 
+function kidsHelplineLoad() {
+    window.open(
+        'https://kidshelpline.com.au/',
+        '_blank'
+    )
+}
+
+function headspaceLoad() {
+    window.open(
+        'https://headspace.org.au/',
+        '_blank'
+    )
+}
+
+function eSafetyReportLoad() {
+    window.open(
+        'https://www.esafety.gov.au/report',
+        '_blank'
+    )
+}
+
+function beyondBlueLoad() {
+    window.open(
+        'https://www.beyondblue.org.au/',
+        '_blank'
+    )
+}
+
+function tripleZero() {
+    window.open('tel:000');
+}
+
 // If current page is index.html, or is nothing, start the event listeners
 if (pathName === "index.html" || pathName === "") {      
     startEventListeners();
