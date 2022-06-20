@@ -199,7 +199,7 @@ button.annotation:hover {
   float: right;
   padding: 2vw;
   height: 30%;
-  z-index: inherit;
+  z-index: 2;
 }
 
 #p2-2 {
@@ -207,7 +207,18 @@ button.annotation:hover {
   float: right;
   padding: 2vw;
   height: 30%;
-  z-index: inherit;
+  z-index: 3;
+}
+
+.grid {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+
+.grid > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
 }
 
 #p2-1 #blur, #p2-2 #blur {
