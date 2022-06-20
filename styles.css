@@ -214,10 +214,10 @@ button.annotation:hover {
   display: grid;
   grid-template-columns: 50%;
   grid-template-rows: 50% 50%;
-  grid-column-gap: 20px
-  grid-row-gap: 20px
-  justify-items: stretch
-  align-items: stretch
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 #p2-1 #blur, #p2-2 #blur {
