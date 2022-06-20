@@ -212,9 +212,6 @@ button.annotation:hover {
 
 .grid {
   display: grid;
-  float: right;
-  justify-items: stretch;
-  align-items: stretch;
 }
 
 .container {
