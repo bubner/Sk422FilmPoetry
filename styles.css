@@ -221,6 +221,20 @@ button.annotation:hover {
   align-items: stretch;
 }
 
+.container {  display: grid;
+  grid-template-columns: [\31 ] 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    "leftsection ."
+    "leftsection ."
+    "leftsection .";
+}
+
+.leftsection { grid-area: leftsection; }
+
 .container {
   display: flex;
 }
