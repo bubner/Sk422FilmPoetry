@@ -35,9 +35,6 @@ function beyondBlueLoad() {
     )
 }
 
-function tripleZero() {
-    window.open('tel:000');
-}
 
 // If current page is index.html, or is nothing, start the event listeners
 if (pathName === "index.html" || pathName === "") {      
