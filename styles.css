@@ -188,7 +188,6 @@ button.annotation:hover {
 
 #p2 {
   background-image: url(images/p2bg.jpg);
-  width: 40%;
   margin: 5px;
   padding: 2vw;
   z-index: inherit;
@@ -238,10 +237,6 @@ button.annotation:hover {
 .leftsection {
   grid-area: leftsection; 
   width: 30%;
-}
-
-.container {
-  display: flex;
 }
 
 .item {
