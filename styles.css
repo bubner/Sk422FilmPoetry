@@ -191,6 +191,7 @@ button.annotation:hover {
   margin: 5px;
   padding: 2vw;
   z-index: inherit;
+  width: 45vw;
 }
 
 #p2-1 {
