@@ -212,8 +212,12 @@ button.annotation:hover {
 
 .grid {
   display: grid;
-  grid-template: 30% 100% / auto auto auto;
-  place-items: center;
+  grid-template-columns: 50%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 20px
+  grid-row-gap: 20px
+  justify-items: stretch
+  align-items: stretch
 }
 
 #p2-1 #blur, #p2-2 #blur {
