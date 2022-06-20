@@ -235,7 +235,10 @@ button.annotation:hover {
     "leftsection .";
 }
 
-.leftsection { grid-area: leftsection; }
+.leftsection {
+  grid-area: leftsection; 
+  width: 30%;
+}
 
 .container {
   display: flex;
