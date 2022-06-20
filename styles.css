@@ -48,6 +48,8 @@ body {
   height: 200px;
   width: auto;
   position: relative;
+  left: 869px;
+  top: -210px;
 }
 
 .mainBarButtons ul {
@@ -163,6 +165,7 @@ li a:hover {
   margin: 0px;
   border-radius: 40px;
   transform: translate(0, 63px);
+  height: 250px;
 }
 
 #wonderIcon {
