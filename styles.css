@@ -202,10 +202,6 @@ button.annotation:hover {
   z-index: 2;
 }
 
-.inlineblock {
-  display: inline-block;
-}
-
 #p2-2 {
   background-image: url(images/p2bg.jpg);
   float: right;
@@ -223,6 +219,16 @@ button.annotation:hover {
   grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex-basis: 100px;
+  height: 100px;
+  margin: 5px;
 }
 
 #p2-1 #blur, #p2-2 #blur {
