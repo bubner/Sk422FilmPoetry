@@ -152,7 +152,7 @@ li a:hover {
   height: auto;
 }
 
-.primary, .secondary ,button {
+.primary, .secondary, .third, button {
   text-align: center;
   font-size: 24px;
   color: white;
@@ -160,7 +160,7 @@ li a:hover {
 
 .secondary ul, .secondary li {
   text-align: left;
-  list-style-type: none;
+  list-style-type: square;
 }
 
 button.annotation {
@@ -178,7 +178,6 @@ button.annotation:hover {
 #index, #p2, #p2-1, #p2-2, #p3 {
   transform: translate(0, 70px);
   background-size: cover;
-  z-index: 5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 4vw;
@@ -190,31 +189,20 @@ button.annotation:hover {
   background-image: url(images/p2bg.jpg);
   margin: 5px;
   padding: 2vw;
-  z-index: inherit;
   width: 45vw;
 }
 
-#p2-1 {
+#p2-1, #p2-2 {
   background-image: url(images/p2bg.jpg);
+  position: static;
   float: right;
   padding: 2vw;
-  height: 30%;
-  z-index: 2;
-}
-
-#p2-2 {
-  background-image: url(images/p2bg.jpg);
-  float: right;
-  padding: 2vw;
-  height: 30%;
-  z-index: 3;
 }
 
 .grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-auto-columns: 1fr;
-  gap: 5px 0px;
+  gap: 10px 0px;
   grid-auto-flow: row;
   justify-items: stretch;
   grid-template-areas:
@@ -224,6 +212,7 @@ button.annotation:hover {
 
 .container {
   display: grid;
+  max-height: 1vw;
   grid-template-columns: [\31 ] 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -238,12 +227,6 @@ button.annotation:hover {
 .leftsection {
   grid-area: leftsection; 
   width: 30%;
-}
-
-.item {
-  flex-basis: 100px;
-  height: 100px;
-  margin: 5px;
 }
 
 #p2-1 #blur, #p2-2 #blur {

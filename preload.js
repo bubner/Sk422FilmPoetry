@@ -8,8 +8,10 @@ function domReady() {
         case "p2_info.html":
             const p2e1 = document.getElementById('p2');
             const p2e2 = document.getElementById('p2-1');
+            const p2e3 = document.getElementById('p2-2');
             p2e1.style.animation = "generate 2s normal none";
-            p2e2.style.animation = "generate 1.25s normal none";  
+            p2e2.style.animation = "generate 1s normal none";  
+            p2e3.style.animation = "generate 1.5s normal none";
         break;
 
         case "index.html":
