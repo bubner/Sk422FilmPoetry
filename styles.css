@@ -212,6 +212,7 @@ button.annotation:hover {
 
 .grid {
   display: grid;
+  float: inline-end;
   grid-template-columns: 50%;
   grid-template-rows: 50% 50%;
   grid-column-gap: 20px;
