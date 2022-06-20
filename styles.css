@@ -212,6 +212,14 @@ button.annotation:hover {
 
 .grid {
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 5px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  grid-template-areas:
+    ""
+    "";
 }
 
 .container {
