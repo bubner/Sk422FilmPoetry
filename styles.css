@@ -191,7 +191,6 @@ button.annotation:hover {
   width: 40%;
   margin: 5px;
   padding: 2vw;
-  display: inline-block;
   z-index: inherit;
 }
 
@@ -200,7 +199,6 @@ button.annotation:hover {
   float: right;
   padding: 2vw;
   height: 30%;
-  display: block;
   z-index: inherit;
 }
 
@@ -209,7 +207,6 @@ button.annotation:hover {
   float: right;
   padding: 2vw;
   height: 30%;
-  display: block;
   z-index: inherit;
 }
 
