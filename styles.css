@@ -40,8 +40,8 @@ body {
   height: 200px;
   width: auto;
   position: relative;
-  left: 107px;
-  top: -207px;
+  left: 112px;
+  top: -196px;
 }
 
 #banner2 {
@@ -103,6 +103,12 @@ li a:hover {
   display: none;
 }
 
+@media screen and (max-width: 1530px) {
+    #banner1, #banner2 {
+    display: none;
+    }
+}
+
 @media screen and (max-width: 1100px) {
   .headingTextLG {
     display: none;
@@ -118,10 +124,6 @@ li a:hover {
 
   li .linksSM {
     display: block;
-  }
-
-  #banner1 {
-    display: none;
   }
 }
 
@@ -153,11 +155,6 @@ li a:hover {
 
 #secondaryText {
   font-size: 32px;
-  font-family: "Lato", sans-serif;
-}
-
-#thirdText {
-  font-size: 18px;
   font-family: "Lato", sans-serif;
 }
 
