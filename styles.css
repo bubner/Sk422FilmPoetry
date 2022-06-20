@@ -213,15 +213,12 @@ button.annotation:hover {
 .grid {
   display: grid;
   float: right;
-  grid-template-columns: 50%;
-  grid-template-rows: 50% 50%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
 }
 
-.container {  display: grid;
+.container {
+  display: grid;
   grid-template-columns: [\31 ] 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
