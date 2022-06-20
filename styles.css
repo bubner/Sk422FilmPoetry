@@ -212,7 +212,8 @@ button.annotation:hover {
 
 .grid {
   display: grid;
-  grid-template: 2fr / 2fr;
+  grid-template-rows: 3;
+  grid-template-columns: 2;
   place-items: center;
 }
 
