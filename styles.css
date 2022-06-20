@@ -175,7 +175,7 @@ button.annotation:hover {
   color: black;
 }
 
-#index, #p2, #p2-1, #p3 {
+#index, #p2, #p2-1, #p2-2, #p3 {
   transform: translate(0, 70px);
   background-size: cover;
   z-index: 5;
@@ -204,7 +204,16 @@ button.annotation:hover {
   z-index: inherit;
 }
 
-#p2-1 #blur {
+#p2-2 {
+  background-image: url(images/p2bg.jpg);
+  float: right;
+  padding: 2vw;
+  height: 30%;
+  display: block;
+  z-index: inherit;
+}
+
+#p2-1 #blur, #p2-2 #blur {
   padding: 2em;
 }
 
