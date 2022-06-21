@@ -245,6 +245,10 @@ button.annotation:hover {
   padding: 4vw;
 }
 
+#primary table {
+  width: auto;
+}
+
 .grid {
   display: grid;
   grid-auto-columns: 1fr;
