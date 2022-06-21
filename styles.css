@@ -199,7 +199,7 @@ button.annotation:hover {
   color: black;
 }
 
-#index, #p2, #p2-1, #p2-2, #p3 {
+#index, #p2, #p2-1, #p2-2, #p3, #p3-1 {
   transform: translate(0, 70px);
   background-size: cover;
   background-repeat: no-repeat;
