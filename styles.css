@@ -245,8 +245,9 @@ button.annotation:hover {
   padding: 4vw;
 }
 
-#primary table {
+#primary table, #primary th, #primary td, #primary tr {
   width: auto;
+  border: 1px solid;
 }
 
 .grid {
