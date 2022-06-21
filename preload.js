@@ -23,7 +23,7 @@ function domReady() {
         case "p3_wonder.html":
             const p3 = document.getElementById('p3');
             const p31 = document.getElementById('p3-1');
-            p3.style.animation = "generate 2s normal none";
+            p3.style.animation = "generate 1.5s normal none";
             p31.style.animation = "generate 2s normal none";
         break;
 
