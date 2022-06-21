@@ -103,7 +103,7 @@ li a:hover {
   display: none;
 }
 
-/* #banner2 is being problematic with relative positioning, using @media as a for-now solution */
+/* #banner2 is being problematic with relative positioning, using @media as a 'well it works' solution */
 
 @media screen and (max-width: 1330px) {
   #banner1, #banner2 {
@@ -198,13 +198,17 @@ li a:hover {
   height: auto;
 }
 
-.primary, .secondary, .third, button {
+.primary, .secondary, .third, .secondaryp2, button {
   text-align: center;
   font-size: 24px;
   color: white;
 }
 
-.secondary ul, .secondary li {
+.primary table td {
+  text-align: left;
+}
+
+.secondaryp2 ul {
   text-align: left;
   list-style-type: square;
 }
@@ -267,7 +271,7 @@ button.annotation:hover {
   padding: 4vw;
 }
 
-.primary table {
+.primary table, .secondary table {
   width: auto;
   font-size: 16px;
 }
@@ -327,6 +331,12 @@ button.annotation:hover {
 
 #p3 {
   background-image: url(images/p3bg.jpg);
+}
+
+#arrow {
+  z-index: 2;
+  height: 100px;
+  width: auto;
 }
 
 #blur {
