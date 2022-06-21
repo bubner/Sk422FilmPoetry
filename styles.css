@@ -333,12 +333,6 @@ button.annotation:hover {
   background-image: url(images/p3bg.jpg);
 }
 
-#arrow {
-  z-index: 2;
-  height: 100px;
-  width: auto;
-}
-
 #blur {
   background: rgba(0, 0, 0, 0.3); 
   backdrop-filter: blur(6px);
