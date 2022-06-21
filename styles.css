@@ -261,7 +261,7 @@ button.annotation:hover {
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
-  gap: 10px 5px; 
+  gap: 10px 0px; 
   grid-template-areas: 
     ". ."; 
   justify-items: stretch; 
