@@ -230,6 +230,13 @@ button.annotation:hover {
   padding: 2vw;
 }
 
+#p3-1 {
+  background-image: url(images/p3bg.jpg);
+  position: static;
+  float: right;
+  padding: 2vw;
+}
+
 .grid, .p3grid {
   display: grid;
   grid-auto-columns: 1fr;
