@@ -213,6 +213,10 @@ button.annotation:hover {
   width: 41vw;
 }
 
+#p3-1 #blur, #p3 #blur {
+  padding: 2em;
+} 
+
 #p2 {
   background-image: url(images/p2bg.jpg);
   margin: 5px;
