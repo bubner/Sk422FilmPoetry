@@ -103,10 +103,19 @@ li a:hover {
   display: none;
 }
 
+/* #banner2 is being problematic with relative positioning, using @media as a for-now solution */
+
 @media screen and (max-width: 1330px) {
-    #banner1, #banner2 {
-    display: none;
-    }
+  #banner1, #banner2 {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #banner2 {
+    left: 738px;
+    top: -183px;
+  }
 }
 
 @media screen and (min-width: 1800px) {
@@ -116,10 +125,9 @@ li a:hover {
   }
 }
 
-@media screen and (min-width: 1500) {
+@media screen and (min-width: 2500px) {
   #banner2 {
-    left: 1072px;
-    top: -177px;
+    display: none;
   }
 }
 
