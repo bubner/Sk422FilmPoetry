@@ -64,6 +64,8 @@ function startEventListeners() {
         a2t.style.display = "block";
     });
 
+    // Add more event listeners here
+
     close.onclick = function() {
         modal.style.animation = "fadeOut 0.3s";
         setTimeout(function(){
