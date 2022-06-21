@@ -248,9 +248,6 @@ button.annotation:hover {
 .primary table {
   width: auto;
   font-size: 16px;
-  border-style: solid;
-  border-color: black;
-  border: 1px;
 }
 
 .grid {
