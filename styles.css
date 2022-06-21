@@ -245,9 +245,12 @@ button.annotation:hover {
   padding: 4vw;
 }
 
-#primary table, #primary th, #primary td, #primary tr {
+#primary table, #primary table tr th, #primary table tr td, #primary tr {
   width: auto;
-  border: 1px solid;
+  font-size: 16px;
+  border-style: solid;
+  border-color: black;
+  border: 1px;
 }
 
 .grid {
