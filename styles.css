@@ -230,7 +230,7 @@ button.annotation:hover {
   padding: 2vw;
 }
 
-.grid {
+.grid, .p3grid {
   display: grid;
   grid-auto-columns: 1fr;
   gap: 10px 0px;
@@ -240,6 +240,7 @@ button.annotation:hover {
     ""
     "";
 }
+
 
 .container {
   display: grid;
