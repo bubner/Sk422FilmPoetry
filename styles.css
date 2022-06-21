@@ -210,14 +210,14 @@ button.annotation:hover {
 }
 
 #p3 {
-  width: 45vw;
+  width: 35vw;
 }
 
 #p2 {
   background-image: url(images/p2bg.jpg);
   margin: 5px;
   padding: 2vw;
-  width: 40vw;
+  width: 45vw;
 }
 
 #p2-1 {
@@ -239,7 +239,7 @@ button.annotation:hover {
   position: static;
   float: right;
   padding: 4vw;
-  width: 40vw;
+  width: 35vw;
 }
 
 .grid {
@@ -258,7 +258,7 @@ button.annotation:hover {
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
-  gap: 5px 0px; 
+  gap: 10px 10px; 
   grid-template-areas: 
     ". ."; 
   justify-items: stretch; 
