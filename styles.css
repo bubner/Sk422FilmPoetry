@@ -245,7 +245,7 @@ button.annotation:hover {
   padding: 4vw;
 }
 
-#primary table, #primary table tr th, #primary table tr td, #primary tr {
+.primary table {
   width: auto;
   font-size: 16px;
   border-style: solid;
