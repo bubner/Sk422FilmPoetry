@@ -18,7 +18,15 @@ function domReady() {
         case "index.html":
         case "": {
             const index = document.getElementById('index');
+            const index2 = document.getElementById('index2');
+            const index3 = document.getElementById('index3');
+            const index4 = document.getElementById('index4');
+            const index5 = document.getElementById('index5');
             index.style.animation = "generate 2s normal none";
+            index2.style.animation = "generate 2.25s normal none";
+            index3.style.animation = "generate 2.5s normal none";
+            index4.style.animation = "generate 2.75s normal none";
+            index5.style.animation = "generate 3s normal none";
         }
         break;
 
