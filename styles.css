@@ -242,7 +242,7 @@ button.annotation:hover {
   width: 40vw;
 }
 
-.grid, .p3grid {
+.grid {
   display: grid;
   grid-auto-columns: 1fr;
   gap: 10px 0px;
@@ -251,6 +251,16 @@ button.annotation:hover {
   grid-template-areas:
     ""
     "";
+}
+
+.p3grid {
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 5px 0px; 
+  grid-template-areas: 
+    ". ."; 
+  justify-items: stretch; 
 }
 
 .container {
