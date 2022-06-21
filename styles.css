@@ -100,6 +100,11 @@ li a:hover {
   display: none;
 }
 
+.headingText {
+  font-weight: bold;
+  font-size: 28px;
+}
+
 /* #banner2 is being problematic with relative positioning, using @media as a 'well it works' solution */
 
 @media screen and (max-width: 1330px) {
@@ -332,6 +337,11 @@ button.annotation:hover {
   backdrop-filter: blur(6px);
   padding: 6em;
   border-radius: 65px;
+}
+
+#blur:hover {
+  background: rgba(0, 0, 0, 0.5); 
+  transition: .30s ease;
 }
 
 .contentLoader {

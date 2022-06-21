@@ -9,9 +9,9 @@ function domReady() {
             const p2e1 = document.getElementById('p2');
             const p2e2 = document.getElementById('p2-1');
             const p2e3 = document.getElementById('p2-2');
-            p2e1.style.animation = "generate 2s normal none";
-            p2e2.style.animation = "generate 1s normal none";  
-            p2e3.style.animation = "generate 1.5s normal none";
+            p2e1.style.animation = "generate 2s ease";
+            p2e2.style.animation = "generate 1s ease";  
+            p2e3.style.animation = "generate 1.5s ease";
         }
         break;
 
@@ -22,19 +22,19 @@ function domReady() {
             const index3 = document.getElementById('index3');
             const index4 = document.getElementById('index4');
             const index5 = document.getElementById('index5');
-            index.style.animation = "generate 2s normal none";
-            index2.style.animation = "generate 2.25s normal none";
-            index3.style.animation = "generate 2.5s normal none";
-            index4.style.animation = "generate 2.75s normal none";
-            index5.style.animation = "generate 3s normal none";
+            index.style.animation = "generate 1.5s ease";
+            index2.style.animation = "generate 3s normal none";
+            index3.style.animation = "generate 3.25s normal none";
+            index4.style.animation = "generate 3.5s normal none";
+            index5.style.animation = "generate 3.75s normal none";
         }
         break;
 
         case "p3_wonder.html": {
             const p3 = document.getElementById('p3');
             const p31 = document.getElementById('p3-1');
-            p3.style.animation = "generate 1.5s normal none";
-            p31.style.animation = "generate 2s normal none";
+            p3.style.animation = "generate 1.5s ease";
+            p31.style.animation = "generate 2s ease";
         }
         break;
 
