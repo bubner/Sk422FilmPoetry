@@ -216,7 +216,14 @@ button.annotation:hover {
   width: 45vw;
 }
 
-#p2-1, #p2-2 {
+#p2-1 {
+  background-image: url(images/p2bg.jpg);
+  position: static;
+  float: right;
+  padding: 2vw;
+}
+
+#p2-2 {
   background-image: url(images/p2bg.jpg);
   position: static;
   float: right;
