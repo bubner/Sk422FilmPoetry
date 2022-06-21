@@ -209,7 +209,7 @@ button.annotation:hover {
   border-radius: 40px;
 }
 
-#p3 {
+#p3, #p3-1 {
   width: 35vw;
 }
 
@@ -239,7 +239,6 @@ button.annotation:hover {
   position: static;
   float: right;
   padding: 4vw;
-  width: 35vw;
 }
 
 .grid {
