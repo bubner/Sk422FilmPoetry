@@ -5,30 +5,34 @@ let lastElement = windowLoc[windowLoc.length - 1];
 const pathName = lastElement;
 function domReady() {
     switch (pathName) {
-        case "p2_info.html":
+        case "p2_info.html": {
             const p2e1 = document.getElementById('p2');
             const p2e2 = document.getElementById('p2-1');
             const p2e3 = document.getElementById('p2-2');
             p2e1.style.animation = "generate 2s normal none";
             p2e2.style.animation = "generate 1s normal none";  
             p2e3.style.animation = "generate 1.5s normal none";
+        }
         break;
 
         case "index.html":
-        case "":
+        case "": {
             const index = document.getElementById('index');
             index.style.animation = "generate 2s normal none";
+        }
         break;
 
-        case "p3_wonder.html":
+        case "p3_wonder.html": {
             const p3 = document.getElementById('p3');
             const p31 = document.getElementById('p3-1');
             p3.style.animation = "generate 1.5s normal none";
             p31.style.animation = "generate 2s normal none";
+        }
         break;
 
-        default:
+        default: {
             console.log('pathName error: cannot find page');
+        }
     }
 }
 
