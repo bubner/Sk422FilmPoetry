@@ -47,6 +47,7 @@ function startEventListeners() {
     const modal = document.getElementById("annotationModal");
     const a1t = document.getElementById('a1t');
     const a2t = document.getElementById('a2t');
+    const a3t = document.getElementById('a3t');
 
     const btn1 = document.getElementById('a1');
     btn1.addEventListener('click', function(event){
@@ -58,6 +59,14 @@ function startEventListeners() {
 
     const btn2 = document.getElementById('a2');
     btn2.addEventListener('click', function(event){ 
+        modal.style.animation = "fadeIn 0.25s, moveDown 0.4s, backgroundOpacity 1.25s";
+        modal.style.display = "block";
+        a1t.style.display = "none";
+        a2t.style.display = "block";
+    });
+
+    const btn3 = document.getElementById('a3');
+    btn3.addEventListener('click', function(event){
         modal.style.animation = "fadeIn 0.25s, moveDown 0.4s, backgroundOpacity 1.25s";
         modal.style.display = "block";
         a1t.style.display = "none";
