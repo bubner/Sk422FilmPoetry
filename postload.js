@@ -1,4 +1,5 @@
 // JavaScript post DOM load
+// Lucas Bubner, 2022
 
 function cornerLoad() {
     window.open(

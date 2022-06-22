@@ -1,4 +1,5 @@
 // JavaScript pre DOM load
+// Lucas Bubner, 2022
 
 const windowLoc = window.location.pathname.split('/');
 let lastElement = windowLoc[windowLoc.length - 1];
