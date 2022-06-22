@@ -34,7 +34,7 @@ function domReady() {
             const p3 = document.getElementById('p3');
             const p31 = document.getElementById('p3-1');
             p3.style.animation = "generate 1.5s ease";
-            p31.style.animation = "generate 2s ease";
+            p31.style.animation = "generate 3s ease";
         }
         break;
 
