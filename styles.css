@@ -342,7 +342,7 @@ button.annotation:hover {
 
 #blur:hover {
   background: rgba(0, 0, 0, 0.5); 
-  transition: .30s ease-in-out;
+  transition: .30s ease;
 }
 
 .contentLoader {
