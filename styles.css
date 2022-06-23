@@ -207,7 +207,7 @@ li a:hover {
   color: white;
 }
 
-.primary table td {
+.primary table td, .secondary table td {
   text-align: left;
 }
 
