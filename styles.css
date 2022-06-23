@@ -103,7 +103,7 @@ li a:hover {
 
 .headingText {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 /* #banner2 is being problematic with relative positioning, using @media as a 'well it works' solution */
@@ -341,7 +341,7 @@ button.annotation:hover {
 }
 
 #blur:hover {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.45); 
   transition: .30s ease;
 }
 
@@ -452,7 +452,7 @@ button.annotation:hover {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid #ed1c24;
   width: 50%;
   border-radius: 35px;
 }
@@ -493,6 +493,7 @@ button.annotation:hover {
 
 @keyframes backgroundOpacity {
   0% { background-color: rgba(0, 0, 0, 0.0); }
+  50% { background-color: rgba(0, 0, 0, 0.0); }
   100% { background-color: rgba(0, 0, 0, 0.6); } 
 }
 
