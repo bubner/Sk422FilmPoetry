@@ -55,7 +55,6 @@ function startEventListeners() {
         allAnnotations[i].addEventListener('click', function(){
             modal.style.animation = "fadeIn 0.15s, moveDown 0.5s, backgroundOpacity 1s";
             modal.style.display = "block";
-            hideRequiredModalText(0);
         });
     }
 
