@@ -45,10 +45,8 @@ if (pathName === "index.html" || pathName === "") {
 }
 
 function startEventListeners() {
-    console.log('Successfully started EventListeners');
     const close = document.getElementsByClassName("close")[0];
     const modal = document.getElementById("annotationModal");
-
 
     // Thing that took me forever to make because I named a variable wrong. Good times.
     for (var i = 0; i < allAnnotations.length; i++) { 
